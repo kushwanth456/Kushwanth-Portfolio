@@ -1,0 +1,713 @@
+@import url(media.css);
+
+@font-face {
+    font-family: robot-regular;
+    src: url(Roboto-Regular.ttf);
+}
+
+* {
+    font-family: robot-regular;
+    font-weight: 500;
+    background-color: rgb(20, 23, 48);
+    user-select: none;
+}
+
+a,
+p {
+    font-size: 15px;
+}
+
+.fa-bars {
+    opacity: 0;
+}
+
+li,
+ul {
+    background-color: rgb(14, 17, 39);
+}
+
+a,
+h1,
+p,
+h1,
+h2,
+h3,
+h4 {
+    color: rgb(244, 202, 143);
+    text-decoration: none;
+    display: inline;
+    margin: 2px;
+    background-color: rgba(14, 17, 39, 1);
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    grid-template-areas:
+        "navbar navbar"
+        "side main";
+    margin: 20px;
+    /* background-color: rgb(14, 17, 37); */
+    background-image: radial-gradient(rgb(11, 13, 32), rgba(16, 19, 46, 0.989));
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 1px rgb(255, 255, 255);
+
+}
+
+nav {
+    background-color: rgb(11, 13, 32);
+    padding: 10px;
+    grid-area: navbar;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    font-size: 15px;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px 0px 1px rgb(255, 255, 255);
+}
+
+nav a {
+    background-color: rgb(11, 13, 32);
+}
+
+/* sidebar */
+
+aside {
+    position: sticky;
+    height: 560px;
+    margin: 20px;
+    grid-area: side;
+    background-color: rgba(14, 17, 39, 1);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.myphoto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    background-color: rgba(14, 17, 39, 1);
+}
+
+.myimg {
+    height: 140px;
+    width: 140px;
+    border-radius: 20px;
+    background-image: linear-gradient(rgb(34, 49, 58), black);
+    background-color: rgba(14, 17, 39, 1);
+}
+
+.myname-job {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(14, 17, 39);
+}
+
+i {
+    font-size: 25px;
+    height: fit-content;
+    color: rgb(244, 202, 143);
+    background-color: rgba(14, 17, 39, 1);
+}
+
+.white {
+    color: white;
+}
+
+.details {
+    width: 250px;
+    gap: 20px;
+    align-items: center;
+    background-color: rgba(14, 17, 39, 1);
+}
+
+main {
+    height: 500px;
+    margin: 20px;
+    grid-area: main;
+    background-color: rgb(14, 17, 39);
+    border-radius: 20px;
+    box-shadow: 0px 0px 1px white;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.about {
+    height: max-content;
+    text-align: justify;
+    line-height: 25px;
+    background-color: rgb(14, 17, 39);
+}
+
+.Whatid0 {
+    display: grid;
+    width: fit-content;
+    grid-template-columns: 350px 350px 300px;
+    grid-template-rows: 150px 150px;
+    grid-template-areas:
+        "job1 job2 skills"
+        "job3 job4 skills";
+    background-color: rgb(14, 17, 39);
+}
+
+.containerwid1 {
+    grid-area: job1;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(11, 13, 32);
+    border-radius: 20px;
+}
+
+.containerwid2 {
+    grid-area: job2;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(11, 13, 32);
+    border-radius: 20px;
+}
+
+.containerwid3 {
+    grid-area: job3;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(11, 13, 32);
+    border-radius: 20px;
+}
+
+.containerwid4 {
+    grid-area: job4;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(11, 13, 32);
+    border-radius: 20px;
+}
+
+.skills {
+    grid-area: skills;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(11, 13, 32);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: rgb(11, 13, 32);
+}
+
+.bars {
+    display: flex;
+    gap: 5px;
+    background-color: rgb(11, 13, 32);
+}
+
+.bar {
+    width: 20px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 3px;
+}
+
+.bar.filled {
+    background-color: rgb(244, 202, 143);
+}
+
+
+
+/* education section */
+
+.Resume {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-areas:
+        "edulogo edulogo"
+        "edu1 edu2"
+        "explogo explogo"
+        "exp1 exp2";
+    background-color: rgb(14, 17, 39);
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+
+}
+
+.edulogo {
+    grid-area: edulogo;
+    background-color: rgb(14, 17, 39);
+
+}
+
+.edupath {
+    grid-area: edu1;
+    position: relative;
+    height: 300px;
+    background-color: rgb(14, 17, 39);
+}
+
+.eduedu {
+    grid-area: edu2;
+    background-color: rgb(14, 17, 39);
+}
+
+.explogo {
+    grid-area: explogo;
+    background-color: rgb(14, 17, 39);
+}
+
+.exppath {
+    grid-area: exp1;
+    position: relative;
+    height: 280px;
+    background-color: rgb(14, 17, 39);
+
+}
+
+.expexp {
+    grid-area: exp2;
+    background-color: rgb(14, 17, 39);
+
+}
+
+/* Timeline vertical line */
+.vert-line {
+    position: absolute;
+    height: 80%;
+    width: 2px;
+    background-color: rgb(244, 202, 143);
+    left: 20px;
+    top: 0;
+}
+
+/* Timeline dots */
+.dot {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(244, 202, 143);
+    border-radius: 50%;
+    left: 13.5px;
+    /* aligns with the line */
+}
+
+.dot1 {
+    position: absolute;
+    top: 20px;
+}
+
+.dot2 {
+    position: absolute;
+    top: 130px;
+}
+
+.dot3 {
+    position: absolute;
+    top: 230px;
+}
+
+.dot4 {
+    position: absolute;
+    top: 20px;
+}
+
+.dot5 {
+    position: absolute;
+    top: 150px;
+}
+
+/* Entry styles */
+.edu-entry,
+.exp-entry {
+    margin-bottom: 40px;
+    background-color: rgb(14, 17, 39);
+
+}
+
+.edu-entry h3,
+.exp-entry h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgb(14, 17, 39);
+
+}
+
+.year {
+    color: rgb(138, 138, 138);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    background-color: rgb(14, 17, 39);
+
+}
+
+.edu-entry p,
+.exp-entry p {
+    color: #ffffff;
+    margin: 0;
+    background-color: rgb(14, 17, 39);
+
+}
+
+.ResumeSkills {
+    height: fit-content;
+    width: fit-content;
+    background-color: rgb(14, 17, 39);
+}
+
+.skill {
+    height: fit-content;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgb(11, 13, 32);
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+}
+
+.rating {
+    padding-bottom: 10px;
+}
+
+p {
+
+    background-color: rgb(11, 13, 32);
+}
+
+.project-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: space-evenly;
+
+}
+
+.project-Card {
+    position: relative;
+    height: 280px;
+    width: 235px;
+    margin: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.project-Card img {
+    height: 275px;
+    width: 230px;
+    border-radius: 20px;
+}
+
+.project-Card:hover img {
+    transform: scale(1.1);
+}
+
+.heading {
+    position: absolute;
+    margin-left: -10px;
+    margin-top: -10px;
+    padding-top: 109%;
+    padding-left: 50px;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 250px;
+    height: 290px;
+    font-size: 15px;
+    background-color: #00000000;
+    color: #00000000;
+    box-sizing: border-box;
+    font-weight: 590;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    z-index: 1;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.project-Card:hover .heading {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.573), rgb(14, 17, 39));
+    background-color: #00000072;
+    color: rgb(244, 202, 143);
+    pointer-events: all;
+}
+
+.project-Card img:hover {
+    transform: scale(1.1);
+}
+
+.fa-eye {
+    color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 100px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background-color: #00000000;
+    font-size: 50px;
+    cursor: pointer;
+
+}
+
+.project-Card:hover .fa-eye {
+    color: rgb(244, 202, 143);
+    z-index: 10;
+}
+
+/* contact form */
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-areas:
+        "map map"
+        "name email"
+        "textarea textarea"
+        "button button";
+    background-color: rgb(14, 17, 39);
+}
+
+.map {
+    border: 2px solid white;
+    grid-area: map;
+}
+
+.name {
+    grid-area: name;
+    height: fit-content;
+    margin-top: 20px;
+    position: relative;
+    background-color: rgb(14, 17, 39);
+    color: white;
+}
+
+input {
+    height: 50px;
+    width: 96%;
+    margin-top: 25px;
+    border-radius: 20px;
+    padding-left: 10px;
+    border: 1px solid white;
+    font-size: 20px;
+    color: white;
+}
+
+label {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    display: none;
+    color: rgb(244, 202, 143);
+    transition: top ease-in-out 300ms linear;
+}
+
+.email {
+    position: relative;
+    grid-area: email;
+    height: fit-content;
+    margin-top: 20px;
+    background-color: rgb(14, 17, 39);
+}
+
+textarea {
+    height: 200px;
+    grid-area: textarea;
+    margin-top: 25px;
+    resize: none;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border: 1px solid white;
+    font-size: 20px;
+    color: white;
+}
+
+input:focus+label {
+    display: block;
+    top: 0px;
+    transition: up;
+    background-color: rgba(11, 13, 32, 0);
+}
+
+button {
+    margin-top: 25px;
+    height: 50px;
+    width: 200px;
+    grid-area: button;
+    border-radius: 20px;
+    background-color: rgb(244, 202, 143);
+    font-size: 25px;
+    justify-self: end;
+    cursor: pointer;
+}
+
+/* /// media queryies */
+
+@media (max-width: 600px) {
+    .layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+            "side"
+            "main";
+        margin: 0;
+    }
+
+    nav {
+        position: fixed;
+        z-index: 999;
+        width: 95%;
+        bottom: 0;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        background-color: rgb(11, 13, 32);
+        border-radius: 0;
+        margin-left: -10px;
+    }
+
+    aside {
+        position: relative;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    main {
+        height: auto;
+        padding-bottom: 60px;
+        /* leave room for fixed nav */
+    }
+
+    .nav-hide {
+        display: none;
+    }
+
+    .myimg {
+        height: 100px;
+    }
+
+    .myphoto {
+        width: 100px;
+        flex-direction: row;
+    }
+
+    .Whatid0 {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto-fill, minmax(150px, auto));
+        grid-template-areas:
+            "job1"
+            "job2"
+            "job3"
+            "job4"
+            "skills";
+        background-color: rgb(14, 17, 39);
+    }
+
+    .vert-line {
+        position: absolute;
+        height: 140%;
+        width: 2px;
+        background-color: rgb(244, 202, 143);
+        left: 18px;
+        top: 0;
+    }
+
+    .eduedu {
+        margin-bottom: 40px;
+    }
+
+    .dot {
+        position: absolute;
+        left: 14px;
+        width: 10px;
+        height: 10px;
+        background-color: rgb(244, 202, 143);
+        border-radius: 50%;
+    }
+
+    .dot1 {
+        top: 5%;
+    }
+
+    .dot2 {
+        top: 55%;
+    }
+
+    .dot3 {
+        top: 100%;
+    }
+
+    .dot4 {
+        top: 10%;
+    }
+
+    .dot5 {
+        top: 120%;
+    }
+
+    .skills {
+        display: block;
+        flex-direction: row;
+    }
+
+    .project-layout {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-areas:
+            "map map"
+            "name name"
+            "email email"
+            "textarea textarea"
+            "button button";
+        background-color: rgb(14, 17, 39);
+        padding: 0px;
+    }
+
+    .email {
+        grid-area: email;
+    }
+
+    .down {
+        height: 40px;
+        width: 40px;
+        background-color: white;
+        position: absolute;
+        border-radius: 0px 0px 50px 50px;
+        box-sizing: border-box;
+        right: 10px;
+        top: 110px;
+        background-color: rgb(244, 202, 143);
+    }
+}

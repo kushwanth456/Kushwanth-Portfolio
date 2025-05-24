@@ -1,0 +1,218 @@
+{
+    "name": "D Kushwanth",
+    "title": "Software Engineer | Full-Stack Developer",
+    "location": "Tirupati, India",
+    "contact": {
+        "email": "mikelkushwanth73@gmail.com",
+        "phone": "+91 8465803896",
+        "linkedin": "https://www.linkedin.com/in/kushwanth-kushu-36749b24a",
+        "github": "https://github.com/kushwanth456"
+    },
+    "summary": "Motivated and results-oriented Full-Stack Developer with practical experience in developing end-to-end applications using Java (Spring Boot), REST APIs, and PostgreSQL. Skilled in data structures, algorithms, and building scalable solutions with strong UI/UX using JavaScript, HTML, CSS. Demonstrated ability to translate academic concepts into real-world applications. Strong foundation in object-oriented programming, backed by internships and hands-on projects. Excellent communication skills and a continuous learner.",
+    "skills": {
+        "backend": [
+            {
+                "skill": "Java",
+                "rating": 4
+            },
+            {
+                "skill": "Python (Basics)",
+                "rating": 2
+            },
+            {
+                "skill": "Spring Boot",
+                "rating": 4
+            },
+            {
+                "skill": "JDBC",
+                "rating": 4
+            },
+            {
+                "skill": "Servlets",
+                "rating": 4
+            },
+            {
+                "skill": "JSP",
+                "rating": 3
+            }
+        ],
+        "frontend": [
+            {
+                "skill": "HTML",
+                "rating": 5
+            },
+            {
+                "skill": "CSS",
+                "rating": 5
+            },
+            {
+                "skill": "JavaScript",
+                "rating": 4
+            },
+            {
+                "skill": "UI/UX (Figma)",
+                "rating": 4
+            }
+        ],
+        "databases": [
+            {
+                "skill": "Oracle SQL",
+                "rating": 4
+            },
+            {
+                "skill": "PostgreSQL",
+                "rating": 4
+            }
+        ],
+        "tools": [
+            {
+                "skill": "Git",
+                "rating": 3
+            },
+            {
+                "skill": "Postman",
+                "rating": 3
+            },
+            {
+                "skill": "WordPress",
+                "rating": 4
+            }
+        ],
+        "concepts": [
+            {
+                "skill": "OOP",
+                "rating": 3
+            },
+            {
+                "skill": "REST APIs",
+                "rating": 3
+            }
+        ]
+    },
+    "projects": [
+        {
+            "title": "Product Landing Page",
+            "img": "productlandingpage.png",
+            "link": "https://github.com/kushwanth456/Product-Landing-Page",
+            "technologies": [
+                "Spring Boot",
+                "PostgreSQL",
+                "JavaScript",
+                "REST API",
+                "Animate on Scroll (AOS)"
+            ],
+            "description": [
+                "Created a personal portfolio website with animated sections using AOS library.",
+                "Connected to PostgreSQL database with REST APIs for dynamic content management.",
+                "Built with Spring Boot backend and JavaScript Fetch API on frontend.",
+                "Ensured fully responsive layout with modern, clean design."
+            ]
+        },
+        {
+            "title": "Weather App",
+            "img": "weatherapp.png",
+            "link": "",
+            "technologies": [
+                "JavaScript",
+                "Fetch API"
+            ],
+            "description": [
+                "Fetched live weather data from public API using Fetch API.",
+                "Displayed real-time temperature and condition icons in a sleek UI."
+            ]
+        },
+        {
+            "title": "Quiz App",
+            "img": "quiz.png",
+            "link": "https://github.com/kushwanth456/quiz",
+            "technologies": [
+                "JavaScript"
+            ],
+            "description": [
+                "Built a general knowledge quiz with interactive UI and timer feature.",
+                "Used JavaScript to dynamically update questions and validate answers.",
+                "Implemented visual feedback and score tracking."
+            ]
+        },
+        {
+            "title": "To-Do List",
+            "img": "todolist.png",
+            "link": "https://github.com/kushwanth456/to-do-list",
+            "technologies": [
+                "JavaScript"
+            ],
+            "description": [
+                "Built a responsive to-do list app with task creation, editing, and completion tracking.",
+                "Used localStorage for persistent task data.",
+                "UI built with dynamic DOM manipulation and event handling."
+            ]
+        },
+        {
+            "title": "Rock Paper Scissors",
+            "img": "rockpapergame.png",
+            "link": "https://github.com/kushwanth456/rockpapergame",
+            "technologies": [
+                "JavaScript"
+            ],
+            "description": [
+                "Created a fun interactive Rock-Paper-Scissors game with emoji-based UI.",
+                "Tracked scores, declared outcomes, and enabled game reset.",
+                "Managed game logic using conditional statements in JavaScript."
+            ]
+        },
+        {
+            "title": "Calculator",
+            "img": "calculator.png",
+            "link": "https://github.com/kushwanth456/Calculator",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "description": [
+                "Designed a functional calculator with basic arithmetic operations.",
+                "Styled with CSS Grid for layout and JavaScript for logic handling.",
+                "Included additional features like percent and sign toggle."
+            ]
+        }
+    ],
+    "experience": [
+        {
+            "title": "Java Developer (Remote)",
+            "duration": "Jan 2025-Mar 2025",
+            "company": "Rveiya Dynamic Pvt Ltd",
+            "description": [
+                "Built Java-based academic systems including banking and student record applications.",
+                "Applied object-oriented programming with method overloading and exception handling."
+            ]
+        },
+        {
+            "title": "Full-Stack Developer Intern",
+            "duration": "Jan 2025-Mar 2025",
+            "company": "Slash Company",
+            "description": [
+                "Developed a modern landing page and weather app using JavaScript and dynamic rendering."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "degree": "B.Tech in Computer Science & Engineering",
+            "institution": "SV College of Engineering, Tirupati",
+            "year": "August 2021-June 2025",
+            "cgpa": "8.50"
+        },
+        {
+            "inter": "Maths Physics Chemistry",
+            "institution": "Narayana Junior College, Tirupati",
+            "year": "March 2021 ",
+            "score": "74%"
+        },
+        {
+            "School": "ssc",
+            "institution": "Sri Chaithaya School",
+            "year": "March 2019",
+            "score": "82%"
+        }
+    ]
+}
