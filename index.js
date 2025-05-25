@@ -307,16 +307,19 @@ document.querySelectorAll(".button").forEach(button => {
 });
 let on = true;
 let down = document.querySelector(".down")
+let icon = document.getElementById("icon")
 down.addEventListener("click", e => {
     e.preventDefault();
 
     const navHideElement = document.querySelector(".nav-hide");
     if (on) {
         navHideElement.style.display = "block";
+        icon.className = "fa-solid fa-angle-up";
         down.style.top = "300px";
         on = false;
     } else {
         navHideElement.style.display = "none";
+        icon.className = "fa-solid fa-angle-down";
         down.style.top = "110px";
         on = true;
     }
