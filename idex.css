@@ -90,6 +90,10 @@ aside {
     /* overflow: hidden; */
 }
 
+.down {
+    display: none;
+}
+
 .myphoto {
     display: flex;
     flex-direction: column;
@@ -145,11 +149,22 @@ main {
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 
+@keyframes loadup {
+    from {
+        transform: scale(0.9);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
 .about {
     height: max-content;
     text-align: justify;
     line-height: 25px;
     background-color: rgb(14, 17, 39);
+    animation: loadup 600ms 1 normal ease-in-out;
 }
 
 .Whatid0 {
@@ -161,6 +176,7 @@ main {
         "job1 job2 skills"
         "job3 job4 skills";
     background-color: rgb(14, 17, 39);
+    animation: loadup 600ms 1 normal ease-in-out;
 }
 
 .containerwid1 {
@@ -246,6 +262,7 @@ main {
     background-color: rgb(14, 17, 39);
     color: rgb(255, 255, 255);
     margin-bottom: 40px;
+    animation: loadup 600ms 1 normal ease-in-out;
 
 }
 
@@ -394,6 +411,7 @@ p {
 }
 
 .project-layout {
+    animation: loadup 600ms 1 normal ease-in-out;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-content: space-evenly;
@@ -409,6 +427,7 @@ p {
     overflow: hidden;
     border-radius: 20px;
     transition: transform 0.3s ease;
+    animation: loadup 600ms 1 normal ease-in-out;
 }
 
 .project-Card img {
@@ -484,6 +503,7 @@ p {
         "textarea textarea"
         "button button";
     background-color: rgb(14, 17, 39);
+    animation: loadup 600ms 1 normal ease-in-out;
 }
 
 .map {
@@ -699,15 +719,25 @@ button {
         grid-area: email;
     }
 
+    .icon {
+        display: block;
+        background-color: rgb(34, 155, 0);
+        color: rgb(244, 202, 143);
+    }
+
     .down {
         height: 40px;
         width: 40px;
+        color: rgb(255, 0, 0);
         background-color: white;
         position: absolute;
         border-radius: 0px 0px 50px 50px;
         box-sizing: border-box;
         right: 10px;
         top: 110px;
-        background-color: rgb(244, 202, 143);
+        display: block;
+        padding-left: 8px;
+        background-color: rgb(14, 17, 39);
+        border: 2px solid rgb(244, 202, 143);
     }
 }
